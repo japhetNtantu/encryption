@@ -30,12 +30,13 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				
-				<configuration>
+				<configuration>  
+				
 					<cloudHubDeployment>
 						<uri>https://anypoint.mulesoft.com</uri>
 						<muleVersion>4.4.0</muleVersion>
-						<username>${anypoint.username}</username>
-						<password>${anypoint.password}</password>
+						<username>japhetntantu5</username>
+						<password>Ntantukava150819</password>
 						<environment>Sandbox</environment>
 						<applicationName>clocktimelab</applicationName>
 						<businessGroup>Cap4Lab</businessGroup>

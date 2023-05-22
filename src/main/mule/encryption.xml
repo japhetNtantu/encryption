@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="encryptionFlow" doc:id="0d687d0f-c542-4da2-96c2-9244f6b1ea0a" >
+		<http:listener doc:name="Listener" doc:id="533a9aa6-d891-4324-9cd2-1ab9d3183463" config-ref="HTTP_Listener_config" path="/encryption"/>
+		<logger level="INFO" doc:name="Logger" doc:id="63882eca-23b9-46c6-962d-47054e9b226d" />
+		<set-payload value="Secret message is : HRFYFZU" doc:name="Set Payload" doc:id="646a1015-3782-4c3a-9a1d-554d94a852df" />
+		<logger level="INFO" doc:name="Logger" doc:id="6c77e692-cb3c-44ab-b4b0-faf44e594031" />
+	</flow>
+</mule>

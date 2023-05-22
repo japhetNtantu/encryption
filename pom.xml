@@ -36,7 +36,7 @@
 						<muleVersion>4.4.0</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<environment>env</environment>
+						<environment>${anypoint.Denv}</environment>
 						<applicationName>Encryption</applicationName>
 						<businessGroup>Cap4Lab</businessGroup>
 						<workerType>Micro</workerType>

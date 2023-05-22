@@ -36,11 +36,11 @@
 						<muleVersion>4.4.0</muleVersion>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<environment>${env}</environment>
-						<applicationName>${appname}</applicationName>
-						<businessGroup>${business}</businessGroup>
-						<workerType>${vCore}</workerType>
-						<workers>${workers}</workers>
+						<environment>Sandbox</environment>
+						<applicationName>clocktimelab</applicationName>
+						<businessGroup>Cap4Lab</businessGroup>
+						<workerType>Micro</workerType>
+						<workers>1</workers>
 					</cloudHubDeployment>
 					<classifier>mule-application</classifier>
 				</configuration>

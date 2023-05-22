@@ -17,10 +17,15 @@ pipeline
         }
         stage('Deploying application To Mulesoft cloudhub') { 
             steps {
-            bat 'mvn clean deploy -DmuleDeploy -DskipTests  -Danypoint.username=japhetntantu5 -Danypoint.password=Ntantukava150819 
+            bat 'mvn clean deploy -DmuleDeploy -DskipTests -Dmule.version=4.4.0 -Danypoint.username=japhetntantu5 -Danypoint.password=Ntantukava150819 -Denv=Sandbox -Dappname=Timezone -Dbusiness=Cap4Lab -DvCore=Micro -Dworkers=1'
                 // 
             } 
-       
+        }
+       stage('Postman collection Test') { 
+            steps {
+            bat 'C:\\Users\\Japhet\\AppData\\Roaming\\npm\\newman run C:\\Users\\Japhet\\AppData\\Roaming\\npm\\node_modules\\Jenkins.postman_collection.json --disable-unicode'
+                // 
+            }
         }
     }
 }

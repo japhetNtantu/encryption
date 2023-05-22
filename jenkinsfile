@@ -17,7 +17,7 @@ pipeline
         }
         stage('Deploying application To Mulesoft cloudhub') { 
             steps {
-            bat 'mvn clean deploy -DmuleDeploy -DskipTests -Dmule.version=4.4.0 -Danypoint.username=japhetntantu5 -Danypoint.password=Ntantukava150819 -Denv=Sandbox -Dappname=Encrypt -Dbusiness=Cap4Lab -DvCore=Micro -Dworkers=1'
+            bat 'mvn clean deploy -DmuleDeploy -DskipTests
                 // 
             } 
        
